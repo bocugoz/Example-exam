@@ -40,6 +40,14 @@ or the program is largely incomplete.
 # Example2: input = "sdfhdsl4??sfasdfga?6sdjkfhbdsjhfkb" output = True (the two numbers sum to 10)
 # weight = 8
 
-def question_mark():
+def question_mark(string):
+
+    for i in string:
+        list1 =[]
+        if i == int:
+            list1.append(i)
+    
+
+
     return 
 
