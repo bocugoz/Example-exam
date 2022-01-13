@@ -40,5 +40,6 @@ or the program is largely incomplete.
 #       returns 'the jack cow and jumped jill over went the up moon the'
 # weight = 3
 
-def merge_sentences():
+def merge_sentences(sentence1,sentence2):
+
     return 
