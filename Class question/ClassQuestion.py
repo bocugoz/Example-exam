@@ -113,3 +113,37 @@ or the program is largely incomplete.
 #       -If course is not specified the function will return a dictionary with, as keys, all the courses that the students have
 #        (mathematics and computing in this example, but there could be more) and as value the mean across the list students.
 #       - If course is specified, the function will return the mean for that specific course across the list of students.
+
+class Student : 
+    
+    def __init__(self, courses={}):
+        
+        self.courses = courses
+        
+    def add_course(self, course_name, year, grade=None):
+        
+        for i in self.courses :
+            if i == course_name:
+
+                answer = "test"
+                while answer != "yes" or "y" or "no" or "n":
+                    answer = input("Do you want to replace the course? ")
+
+                if answer == "yes" or "y":
+                    if grade == None:
+                        grade = input("What is the grade? ")
+                    else: 
+                        self.courses[i] = grade
+
+            else:
+                self.courses[course_name] = ""
+
+
+
+    def attributes(self):
+        print(f"ID: {self.ID} \nPosition: {self.position} \nVelocity: {self.velocity}")
+   
+    pass
+
+dic = {"course": "1", "maths": "2","computing":"3"}
+
