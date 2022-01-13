@@ -47,8 +47,27 @@ or the program is largely incomplete.
 # in which case the function would return True, if the character was "a" and false otherwise.
 # weight = 15
 
-def find_letter():
-    return
+def find_letter(matrix, character):
+    counter0 = 0
+    try:
+        for subset in matrix: 
+            counter1 = 1
+            for x in subset:
+                if subset[counter1] == character:  
+                    if subset[counter1+1] == character:
+                        subset2 = matrix[counter0+1]
+                        if subset2[counter1] == character:
+                            if subset2[counter1+1] == character:
+                                return True
+                    
+                counter1 += 1
+        counter0 += 1            
+
+    except:
+
+        return False
 
 
 
+myList = [[1,2,"a",0], [2, 3, "a","a"], [1, 4, 6, 8], [5, 2, 6, 6]]
+print(find_letter(myList, "a"))

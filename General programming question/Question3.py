@@ -41,5 +41,5 @@ or the program is largely incomplete.
 # weight = 3
 
 def merge_sentences(sentence1,sentence2):
-
+    
     return 
